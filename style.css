@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+
+div.wrapper{
+    margin: auto;
+    width: max-content;
+    height: max-content;
+}
+
+form{
+    padding: 1rem;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column
+}
+
+div.wrapper h2{
+    padding: .5rem;
+    text-align: center;
+    color: white;
+    background: linear-gradient(to right, rgb(94, 119, 187), royalblue);
+}
+
+div.input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group:nth-child(2) .input-box,
+.input-group:nth-child(6) .input-box,
+.input-group:nth-child(7) .input-box{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.input-group:nth-child(3) .input-box{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.input-group:nth-child(5) .input-box,
+.input-group:nth-child(4) .input-box{
+    padding: .5rem;
+}
+
+form i{
+    height: 100%;
+    width: 2rem;
+    align-self: center;
+}
+
+div.input-box{
+    background: white;
+    margin: .25rem 0;
+    border-radius: .2rem;
+    box-shadow:  0 5px 10px rgba(0, 0, 0, 0.1);
+    width: max-content;
+}
+
+div.input-group:nth-child(1) div.input-box{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+input{
+    border: none;
+    background: inherit;
+    font-size: 1.1rem;
+    font-family: monospace;    
+    padding: .5rem;
+}
+
+i, h4{
+    color: royalblue;
+}
+
+select{
+    border: none;
+    background: white;
+    padding: .5rem;
+}
+
+button{
+    border: none;
+    padding: 1rem 3rem;
+    background: royalblue;
+    color: white;
+    transition: .5s;
+    border-radius: .2rem;
+    margin: .5rem 0;
+}
+
+button:hover{
+    color: royalblue;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.input-group:last-child .input-box{
+    box-shadow: 0 0 0;
+    padding: 0;
+}
